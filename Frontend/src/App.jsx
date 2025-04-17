@@ -71,7 +71,7 @@ function App() {
       const formData = new FormData();
       formData.append("file", audioBlob, "recording.webm");
 
-      const response = await fetch("http://localhost:8000/api/transcribe/", {
+      const response = await fetch("https://bpmn-ai-backend.onrender.com/api/transcribe/", {
         method: "POST",
         body: formData,
       });
