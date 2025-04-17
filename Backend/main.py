@@ -11,7 +11,7 @@ app = FastAPI()
 # Настройка CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Для разработки можно разрешить все, потом заменить на конкретные домены
+    allow_origins=["https://bpmn-ai-frontend-sqdx.onrender.com"],  # Для разработки можно разрешить все, потом заменить на конкретные домены
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
